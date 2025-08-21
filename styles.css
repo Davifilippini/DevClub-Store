@@ -23,13 +23,11 @@ header {
     align-items: center;
     z-index: 3;
     background-color: rgba(15, 15, 30, 0.8);
-    /* Adicionado para melhor visualização em sobreposição */
 }
 
 .logo {
     font-family: "Orbitron", sans-serif;
     font-size: 1.5rem;
-    /* Reduzido para melhor encaixe */
     font-weight: 900;
     color: #00f7ff;
     text-shadow: 0 0 10px rgba(0, 247, 255, 0.5);
@@ -38,7 +36,6 @@ header {
 header nav ul {
     display: flex;
     gap: 24px;
-    /* Reduzido o espaçamento */
 }
 
 header nav ul li {
@@ -99,7 +96,6 @@ header nav ul li:hover::after {
 
 .list {
     width: 100%;
-    /* Alterado para ocupar toda a largura */
     height: 100%;
     margin: 0 auto;
     position: relative;
@@ -323,14 +319,9 @@ header nav ul li:hover::after {
     left: 70%;
 }
 
-/* ========================================= */
-/* ESTILOS RESPONSIVOS              */
-/* ========================================= */
-
 @media (max-width: 768px) {
     body {
         overflow: auto;
-        /* Permite rolar a página se necessário */
     }
 
     header {
@@ -356,34 +347,28 @@ header nav ul li:hover::after {
         align-items: center;
         padding-top: 100px;
         padding-bottom: 250px;
-        /* Espaço generoso no rodapé para os controles */
         min-height: 100vh;
         gap: 20px;
-        /* Adiciona um espaço entre a imagem e o conteúdo de texto */
     }
 
 
     .product-img {
         width: 90%;
         height: auto;
-        /* Altura automática para a imagem não ser cortada */
         flex-shrink: 0;
     }
 
     .product-img img {
         max-width: 60%;
-        /* Ajuste para a imagem não ficar tão grande */
         max-height: 100%;
     }
 
     .content {
         width: 90%;
         height: auto;
-        /* MUITO IMPORTANTE: Altura automática para exibir todo o conteúdo */
         padding-right: 0;
         align-items: center;
         text-align: center;
-        /* Removemos o overflow:hidden que estava escondendo o texto */
     }
 
     .product-tag {
@@ -392,21 +377,17 @@ header nav ul li:hover::after {
 
     .product-name {
         font-size: 2.5rem;
-        /* Reduz o tamanho da fonte do nome do produto */
     }
 
     .description {
         font-size: 1rem;
-        /* Reduz o tamanho da fonte da descrição */
         max-width: 90%;
     }
 
     .arrows {
         top: auto;
         bottom: 120px;
-        /* Posição dentro da área segura */
         width: 90%;
-        /* Removemos transform e left para usar o posicionamento padrão do container */
     }
 
     .arrow-btn {
@@ -424,11 +405,11 @@ header nav ul li:hover::after {
 
     .tech-circle {
         display: none;
-        /* Oculta os círculos decorativos para uma interface mais limpa */
     }
 
     .container::before {
         width: 300px;
         height: 300px;
     }
+
 }
